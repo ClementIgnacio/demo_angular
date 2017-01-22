@@ -1,0 +1,99 @@
+#logo {
+  display: block;
+  margin: auto;
+  font-family: 'Pacifico'!important;
+  text-align: center;
+  font-size: 55px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+#logo a{
+  color:#222;
+  text-decoration: none;
+  transition-duration: 1s;
+}
+
+#logo a:hover{
+  color: #346;
+  transition-duration: 1s;
+
+}
+
+#navbar-primary.navbar-default {
+  background: transparent;
+  border: none;
+}
+#navbar-primary.navbar-default .navbar-nav {
+  width: 100%;
+  text-align: center;
+}
+#navbar-primary.navbar-default .navbar-nav > li {
+  display: inline-block;
+  float: none;
+}
+#navbar-primary.navbar-default .navbar-nav > li > a {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+#ng-view{
+  margin:auto;
+  text-align: center;
+}
+
+.link{
+  color:#fff!important;
+  text-decoration: none;
+}
+
+/* Animation keyframes - you need to add prefixes */
+@-webkit-keyframes spin {
+    from { -webkit-transform: rotate(0deg); }
+    to { -webkit-transform: rotate(360deg); }
+}
+
+@-moz-keyframes spin {
+    from { -moz-transform: rotate(0deg); }
+    to { -moz-transform: rotate(360deg); }
+}
+
+@-ms-keyframes spin {
+    from { -ms-transform: rotate(0deg); }
+    to { -ms-transform: rotate(360deg); }
+}
+
+.loading {
+position: absolute;
+top: 50%;
+left: 50%;
+width: 28px;
+height: 28px;
+margin: -14px 0 0 -14px;
+z-index: 1;
+}
+
+.loading .spinner {
+position: absolute;
+left: 1px;
+top: 1px;
+width: 26px;
+height: 26px;
+-webkit-animation: spin 1s infinite linear;
+-moz-animation: spin 1s infinite linear;
+-o-animation: spin 1s infinite linear;
+animation: spin 1s infinite linear;
+}
+
+.loading .mask {
+width: 12px;
+height: 12px;
+overflow: hidden;
+}
+
+.loading .maskedCircle {
+width: 20px;
+height: 20px;
+border-radius: 12px;
+border: 3px solid #666;
+}

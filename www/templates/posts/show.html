@@ -1,0 +1,21 @@
+<div class="loading" ng-show="wait">
+  <div class="spinner">
+    <div class="mask">
+      <div class="maskedCircle"></div>
+    </div>
+  </div>
+</div>
+
+<div class="post" ng-show="!wait">
+  <h1>{{post.title}}</h1>
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <p>{{post.body}}</p>
+          <span class="text-left">Rédigé par : <a href="#!/users/{{post.userId}}">{{post.name}}</a></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

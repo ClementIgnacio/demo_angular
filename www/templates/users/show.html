@@ -1,0 +1,20 @@
+<div class="loading" ng-show="wait">
+  <div class="spinner">
+    <div class="mask">
+      <div class="maskedCircle"></div>
+    </div>
+  </div>
+</div>
+<div class="user" ng-show="!wait">
+  <h1>{{user.name}}</h1>
+  <ul class="list-group">
+    <li class="list-group-item">Nom et prénom : {{user.name}}</li>
+    <li class="list-group-item">Surnom : {{user.username}}</li>
+    <li class="list-group-item">Adresse e-mail : {{user.email}}</li>
+    <li class="list-group-item">Adresse postale : {{user.address.street}}</li>
+  </ul>
+
+  <ng-map center="{{user.address.geo.lat}},{{user.address.geo.lng}}" zoom="4">
+    <marker position="{{user.address.geo.lat}},{{user.address.geo.lng}}" title="{{user.name}}"></marker>
+  </ng-map>
+</div>

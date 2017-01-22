@@ -1,0 +1,12 @@
+<div class="loading" ng-show="wait">
+  <div class="spinner">
+    <div class="mask">
+      <div class="maskedCircle"></div>
+    </div>
+  </div>
+</div>
+
+<h1>Liste des utilisateurs</h1>
+<ul class="list-group" ng-show="!wait">
+  <li ng-repeat="user in users" class="list-group-item"><a href="#!/users/{{user.id}}">{{user.name}}</a></li>
+</ul>
